@@ -3,7 +3,7 @@ language: java
 deploy:
   provider: releases
   api_key: "${api_key}"
-  file: "target/wallboard-api-0.0.1.jar"
+  file: "/home/travis/build/jscruz/wallboard-api/target/wallboard-api-0.0.1-SNAPSHOT.jar"
   skip_cleanup: true
   on:
      tags: true
