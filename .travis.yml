@@ -1,1 +1,9 @@
 language: java
+
+deploy:
+  provider: releases
+  api_key: "${api_key}"
+  file: "target/wallboard-api-*.jar"
+  skip_cleanup: true
+  on:
+     tags: true
